@@ -1,0 +1,32 @@
+.viual_bg_wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.viual_bg_wrap:before {
+  content: '';
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.viual_bg_wrap .txt_box {
+  position: relative;
+}
+
+.viual_bg_wrap .title {
+  font-size: 30px;
+  font-weight: bold;
+}

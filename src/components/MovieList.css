@@ -1,0 +1,48 @@
+.movie_list_wrap {
+  display: flex;
+  flex-flow: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.movie_list_wrap li {
+  width: calc(25% - 10px);
+  padding: 10px 0;
+}
+
+.movie_list_wrap li a {
+  text-decoration: none;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.ellipsis.card-title {
+  font-size: 18px;
+  color: #222;
+  padding: 0 0 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 996px) {
+  .movie_list_wrap li {
+    width: calc(33.33% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .movie_list_wrap {
+    justify-content: center;
+  }
+
+  .movie_list_wrap li {
+    width: calc(50% - 10px);
+    padding: 10px 5px;
+  }
+}
